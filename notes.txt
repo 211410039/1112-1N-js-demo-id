@@ -1,0 +1,12 @@
+git config --global user.email "211410039@o365.tku.edu.tw"
+git config --global user.name "211410039"
+git pull 
+
+git status
+git add .
+git commit -m "log messages"
+git push 
+
+git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2022-12-21"
+
+sass --watch scss:css
