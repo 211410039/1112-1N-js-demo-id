@@ -61,6 +61,7 @@ allLi.forEach((item) => {
     item.addEventListener('click', () =>{
         if( item.classList.contains('disabled') ){
             alert('Aready filled');
+            turn--;
         } else if(turn %2 == 0){
             item.textContent = 'O';
             item.classList.add('o', 'disabled');
