@@ -42,12 +42,29 @@ const randomBtn = document.querySelector('.random-btn');
 
 let currentItem = 0;
 
+// function showReview(){
 
-window.addEventListener('DOMContentLoaded', () => {
-  const item = reviews[currentItem];
+//}
+
+const showReview = (person) =>{
+  const item = reviews[person];
   console.log('item', item);
   img.src = item.img;
   author.textContent = item.name;
   job.textContent = item.job;
   info.textContent = item.text;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  showReview(currentItem);
 });
+
+nextBtn.addEventListener('click', () => {
+  currentItem++;
+  if(currentItem >= reviews.length ){
+    currentItem = 0;
+  }
+  //console.log('currentItem', reviews[currentItem]);
+  showReview(currentItem);
+});
+
