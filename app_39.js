@@ -68,3 +68,16 @@ nextBtn.addEventListener('click', () => {
   showReview(currentItem);
 });
 
+prevBtn.addEventListener('click', () => {
+  currentItem--;
+  if(currentItem >= reviews.length ){
+    currentItem = 3;
+  }
+  showReview(currentItem);
+});
+
+randomBtn.addEventListener('click', ()=>{
+  currentItem = Math.floor(Math.random() *reviews.length);
+  showReview(currentItem);
+})
+
