@@ -77,8 +77,8 @@ nextBtn.addEventListener('click', () => {
 
 prevBtn.addEventListener('click', () => {
   currentItem--;
-  if(currentItem >= reviews.length ){
-    currentItem = 3;
+  if(currentItem < 0 ){
+    currentItem = reviews.length-1;
   }
   showReview(currentItem);
 });
