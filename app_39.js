@@ -55,6 +55,8 @@ const menu = [
     },
 ];
 
+const categories = ['all', 'breakfast', 'lunch', 'dinner', 'shakes'];
+
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
 
@@ -80,6 +82,20 @@ const displayMenuItems = (menu) => {
     sectionCenter.innerHTML = displayMenu;
 }
 
+    
+const displayMenuButtons = (data) => {
+    let menuButtons = data.map( (category) =>{
+        return `
+        <button type="button" class="filter-btn" data-id=${category}>${category}</button>`
+    });
+    console.log('displayButtons before join', menuButtons);
+    menuButtons = menuButtons.join('');
+    console.log('displayButtons after join', menuButtons);
+    btnContainer.innerHTML = menuButtons;
+}
+
+
 window.addEventListener('DOMContentLoaded' , () => {
     displayMenuItems(menu);
+    displayMenuButtons(categories);
 });
