@@ -53,9 +53,16 @@ const menu = [
         remote_img: '',
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto modi debitis numquam harum, impedit soluta tempora aliquid commodi, earum odit expedita minima id eveniet mollitia quasi libero ducimus dignissimos iste!'
     },
+    {
+        id: 6,
+        title: 'godzilla milkshake',
+        category: 'desserts',
+        price: 13.99,
+        img: './images/item-6.jpeg',
+        remote_img: '',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto modi debitis numquam harum, impedit soluta tempora aliquid commodi, earum odit expedita minima id eveniet mollitia quasi libero ducimus dignissimos iste!'
+    },
 ];
-
-const categories = ['all', 'breakfast', 'lunch', 'dinner', 'shakes'];
 
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
@@ -76,11 +83,14 @@ const displayMenuItems = (menu) => {
           </div>
         </article>`
     });
-    console.log('displayMenu before join', displayMenu);
+    // console.log('displayMenu before join', displayMenu);
     displayMenu = displayMenu.join('');
-    console.log('displayMenu after join', displayMenu);
+    // console.log('displayMenu after join', displayMenu);
     sectionCenter.innerHTML = displayMenu;
 }
+
+// const categories = ['all', 'breakfast', 'lunch', 'dinner', 'shakes','desserts'];
+const categories = ['all', ...new Set(menu.map((item) => item.category))];
 
     
 const displayMenuButtons = (data) => {
