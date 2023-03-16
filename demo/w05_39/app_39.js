@@ -3,6 +3,8 @@ import{ menu } from './data_39.js'
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
 
+
+
 const displayMenuItems = (menu) => {
     let displayMenu = menu.map( (item) =>{
         return `
@@ -34,11 +36,30 @@ const displayMenuButtons = (data) => {
         return `
         <button type="button" class="filter-btn" data-id=${category}>${category}</button>`
     });
-    console.log('displayButtons before join', menuButtons);
+    //console.log('displayButtons before join', menuButtons);
     menuButtons = menuButtons.join('');
-    console.log('displayButtons after join', menuButtons);
+    //console.log('displayButtons after join', menuButtons);
     btnContainer.innerHTML = menuButtons;
+
+    
+    const filterBtns =document.querySelectorAll('.filter-btn');
+    console.log('filterBtns', filterBtns);
+    filterBtns.forEach( (btn) => {
+        btn.addEventListener('click', (e) => {
+            console.log('data-id', e.currentTarget.dataset.id);
+            const category = e.currentTarget.dataset.id;
+            const filterMenu = menu.filter( (item) => item.category === category );
+            console.log('filterMenu', filterMenu);
+            if(category === 'all'){
+                console.log('all', menu);
+                displayMenuItems(menu);
+            }else{
+                displayMenuItems(filterMenu);
+            }
+        });
+    } );
 }
+
 
 
 window.addEventListener('DOMContentLoaded' , () => {

@@ -54,11 +54,11 @@ export const menu = [
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto modi debitis numquam harum, impedit soluta tempora aliquid commodi, earum odit expedita minima id eveniet mollitia quasi libero ducimus dignissimos iste!'
     },
     {
-        id: 6,
-        title: 'godzilla milkshake',
+        id: 7,
+        title: 'chocolate milkshake',
         category: 'desserts',
         price: 13.99,
-        img: './images/item-6.jpeg',
+        img: './images/item-9.jpeg',
         remote_img: '',
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto modi debitis numquam harum, impedit soluta tempora aliquid commodi, earum odit expedita minima id eveniet mollitia quasi libero ducimus dignissimos iste!'
     },
