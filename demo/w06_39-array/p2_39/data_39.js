@@ -26,4 +26,4 @@ export const students = [ //export匯出
     },
 ];
 
-export const sdata = [90,100,60,40,20,80];
+export const sdata = [90, 100, 60, 40, 20, 80];
