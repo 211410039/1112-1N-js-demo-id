@@ -2,8 +2,32 @@
 
 [Vercel URL](https://1112-1-n-js-demo-id.vercel.app/)
 
-### W02-P1: checkWin to determine who wins, you need to create four images as said in class 
+### Finish on vercel 
 
-![w02-p1-1.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/w02-p1-1.png?t=2023-03-02T10%3A54%3A29.220Z)
+![md-1.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-1.png?t=2023-04-16T04%3A38%3A33.871Z)
 
-![w02-p1-2.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/w02-p1-2.png?t=2023-03-02T10%3A54%3A48.589Z)
+### html & javascript
+
+![md-2.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-2.png?t=2023-04-16T04%3A38%3A33.871Z)
+
+![md-3.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-3.png?t=2023-04-16T04%3A38%3A33.871Z)
+
+### Every week md 
+
+![md-4-1.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-4-1.png?t=2023-04-16T04%3A38%3A33.871Z)
+
+![md-4-2.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-4-2.png?t=2023-04-16T04%3A38%3A33.871Z)
+
+![md-4-3.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-4-3.png?t=2023-04-16T04%3A38%3A33.871Z)
+
+![md-4-4.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-4-4.png?t=2023-04-16T04%3A38%3A33.871Z)
+
+![md-4-5.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-4-5.png?t=2023-04-16T04%3A38%3A33.871Z)
+
+![md-4-6.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-4-6.png?t=2023-04-16T04%3A38%3A33.871Z)
+
+![md-4-7.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-4-7.png?t=2023-04-16T04%3A38%3A33.871Z)
+
+###  Github Repo URL & commit logs URL
+
+![md-5.png](https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/md_img/md-5.png?t=2023-04-16T04%3A38%3A33.871Z)
