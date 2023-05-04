@@ -7,13 +7,13 @@ const btn = document.querySelector('.btn');
 
 btn.addEventListener('click',()=>{
     addColor(1000, heading1, 'red')
-    .then(()=>addColor(2000, heading2, 'green'))
+    .then(()=>addColor(2000, heading2, 'green')) //加{}要寫return =>.then(()=>{ return addColor(2000, heading2, 'green')})
     .then(()=>addColor(1000, heading3, 'blue'))
     .then(()=>addColor(500, heading4, 'yellow'))
     .catch((error)=>console.log(error))
 });
 const addColor =(time, element, color)=>{
-    return new Promise((resolve, reject)=>{
+    return new Promise((resolve, reject)=>{  //return
     if(element){
         setTimeout(()=>{
             element.style.color = color;
