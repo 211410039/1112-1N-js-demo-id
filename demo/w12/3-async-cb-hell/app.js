@@ -14,7 +14,7 @@ console.log(`chop carrot`);
 
 function boilWater(time) {
   console.log('boiling...');
- setTimeout((time)=>{ //非同步,所以不會等這邊做完
+ setTimeout((time)=>{ //非同步,所以不會等這邊做完,會先跳出函式
   console.log('done');
   console.log('add carrots');
   setTimeout(()=>{
