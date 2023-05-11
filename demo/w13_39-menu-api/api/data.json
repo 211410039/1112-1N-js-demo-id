@@ -4,7 +4,7 @@
     "title": "buttermilk pancakes",
     "category": "breakfast",
     "price": 15.59,
-    "local_img": "/menu/images/item-1.jpeg",
+    "local_img": "./menu/images/item-1.jpeg",
     "remote_img":"https://qmfqlvkbasosvmqhicrw.supabase.co/storage/v1/object/public/demo-39/menu/item-1.jpeg?t=2023-05-11T12%3A02%3A04.353Z",
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam."
   },

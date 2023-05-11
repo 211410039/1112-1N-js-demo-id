@@ -1,9 +1,12 @@
+//前面html要導入script模組
+const supabaseUrl = 'https://qmfqlvkbasosvmqhicrw.supabase.co'
+const supabase_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFtZnFsdmtiYXNvc3ZtcWhpY3J3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc3NTM5NTQsImV4cCI6MTk5MzMyOTk1NH0.2NIj7OsMe1P9xfJScWV521I_xUpdoPpiwiK4I-NStUU'
+
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
 
 // import{ menu } from './data_39.js'
-const url = './api/data.json';
-
+const url = 'https://qmfqlvkbasosvmqhicrw.supabase.co/rest/v1/menu_39?select=*';
 let menu;
 
 const displayMenuItems = (menu) => {
@@ -65,7 +68,13 @@ const displayMenuButtons = () => {
 
 const fetchData = async ()=>{
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, {
+            method: 'GET',
+            headers:{
+                apikey:`${supabase_key}`,
+                Authorization:`Bearer ${supabase_key}`
+            }
+        });
         const data = response.json();
         console.log('fetch data', data);
         return data;
