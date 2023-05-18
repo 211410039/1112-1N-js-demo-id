@@ -15,7 +15,7 @@ const displayMenuItems = (menu)=>{
               />
               <footer>
                 <h5 class="name">${item.fields.name}</h5>
-                <span class="price">${item.fields.price}</span>
+                <span class="price">$${item.fields.price/100}</span>
               </footer>
             </div>`
     });
