@@ -2,7 +2,8 @@
 
 const url = './api/products.json'//這個撈不到用local端
 
-const pContainer = document.querySelector('.products-container')
+const pContainer = document.querySelector('.products-container');
+const companyBtns = document.querySelectorAll('.company-btn');
 
 let allProducts; 
 let products;
@@ -40,7 +41,20 @@ const displayProducts = (products) =>{
     pContainer.innerHTML = displayContent;
 }
 
-
+companyBtns.forEach((btn)=>{
+    btn.addEventListener('click',(e)=>{
+        const companyId = e.currentTarget.dataset.id; //dataset是一個集合
+        console.log('companyId', companyId);
+        if(companyId === 'all'){
+            console.log('all products', allProducts);
+            displayProducts(allProducts);
+        }else{
+            products = allProducts.filter((p)=>p.fields.company === companyId);
+            console.log(`${companyId}products`, products);
+            displayProducts(products);
+        }
+    });
+});
 
 window.addEventListener('DOMContentLoaded', async () =>{
     allProducts = await fetchData();
