@@ -1,6 +1,9 @@
 const showClassDemo = (week) => {
     const showDemo = document.querySelector('.banner-section');
     switch(week){
+        case 'Home':
+            showDemo.innerHTML = `<iframe src='./index.html' width="100%" height="100%"/>`;
+            break;
         case 'w1':
             showDemo.innerHTML = `<iframe src='./demo/w01_39/index.html' width="100%" height="100%"/>`;
             break;
@@ -66,6 +69,9 @@ const showClassDemo = (week) => {
             break;
         case 'w15':
             showDemo.innerHTML = `<iframe src='./demo/w15_39-store-product/index.html' width="100%" height="100%"/>`;
+            break;
+        case 'Contact':
+            showDemo.innerHTML = `<iframe src='./contact_39.html' width="100%" height="100%"/>`;
             break;
     }
 
