@@ -64,6 +64,9 @@ const showClassDemo = (week) => {
         case 'w14':
             showDemo.innerHTML = `<iframe src='./demo/w14_39-products-api/index.html' width="100%" height="100%"/>`;
             break;
+        case 'w15':
+            showDemo.innerHTML = `<iframe src='./demo/w15_39-store-product/index.html' width="100%" height="100%"/>`;
+            break;
     }
 
 }
