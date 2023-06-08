@@ -18,7 +18,9 @@ const displayMenuItems = (menu)=>{
                 <span class="price">$${item.fields.price/100}</span>
               </footer>
             </div>`
+            
     });
+    console.log('menu',menu);
     displayMenu = displayMenu.join('');
     sectionCenter.innerHTML = displayMenu;
 }
