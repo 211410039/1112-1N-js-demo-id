@@ -73,6 +73,9 @@ const showClassDemo = (week) => {
         case 'Contact':
             showDemo.innerHTML = `<iframe src='./contact_39.html' width="100%" height="100%"/>`;
             break;
+            case 'Api Project':
+                showDemo.innerHTML = `<iframe src='./demo/api_project_39/index.html`;
+                break;
     }
 
 }
